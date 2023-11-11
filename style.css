@@ -115,6 +115,7 @@ nav ul li a:hover{
 
 nav{
       margin: 0;
+      display: none;
       
      
     }
@@ -129,6 +130,7 @@ nav{
 
     .logo img{
       position: relative;
+      width: 100px;
       
     }
 
@@ -150,7 +152,7 @@ nav{
 
   .main{
     position: relative;
-    top: -130px;
+    top: 130px;
   }
 
 }
@@ -189,13 +191,27 @@ nav{
 
 }
 
+@media screen and (max-width:600px){
+
+  .main h1{
+    font-size: 45px;
+  }
+
+  .main p{
+
+    width: 90%;
+    margin: 0 auto;
+   
+  }
+}
+
 /*About section*/
 
 
 .about{
   background-color: #000100;
   color: aliceblue;
-  height: 1000px;
+  height: 100vh;
 }
 
 .about h1{
@@ -323,7 +339,7 @@ text-align: end;
 
 
   .about{
-    height: 170vh;
+    height: 190vh;
     width: 100%;
   }
 
@@ -342,18 +358,23 @@ text-align: end;
   .col-1 img{
 
     padding: 0;
-    width: 400px;
+    width: 300px;
     height: auto;
     text-align: center;
+    margin: 0 auto;
   }
 
   .socialicons{
 
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
   }
 
+ 
   .col-2{
-    margin: 5rem auto;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -367,8 +388,7 @@ text-align: end;
 
   .col-2 p{
     width: 80%;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin: 0 auto;
     text-align: justify;
   }
 
@@ -417,9 +437,8 @@ height: 1000px;
 }
 
 .edu-2{
-  width: 90%;
+  width: 80%;
   margin-top:5rem ;
-  margin-left: 2rem;
   
   
 }
@@ -442,7 +461,7 @@ height: 1000px;
 
 .edu-2 h2{
   margin-top: 1rem;
-  list-style-type: circle;
+  
 
 }
 
@@ -469,7 +488,7 @@ height: 1000px;
   .edu-1 img{
 
     margin: 2rem 0 2rem 0;
-    width: 400px;
+    width: 300px;
     height: auto;
     
     
@@ -478,7 +497,7 @@ height: 1000px;
   .edu-2{
 
     width: 100%;
-    margin: 0 3rem 0 3rem ;
+    margin: 0 auto;
     padding-left: 3rem;
    
   }
